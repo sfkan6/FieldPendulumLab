@@ -1,0 +1,21 @@
+
+services:
+
+  backend:
+    # restart: always
+    build: ./services/backend
+    devices:
+      - "/dev/video0:/dev/video0"
+    ports:
+      - 8000:${BACKEND_PORT}
+
+  frontend:
+    # restart: always
+    build: ./services/frontend
+    environment:
+      - VITE_BACKEND_HOST=localhost:${BACKEND_PORT}
+    ports:
+      - 5000:${FRONTEND_PORT}
+    depends_on:
+      - backend
+
