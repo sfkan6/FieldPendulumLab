@@ -1,6 +1,7 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Request, Body, HTTPException, status
 from websockets.exceptions import ConnectionClosed
-from .services.cv2_detection import HSVThresher, Image, CV2Image, CV2HSVThresher
+from cv2_detection.object_detection import HSVThresher, Image
+from cv2_detection import HSVThresher as CV2HSVThresher, Image as CV2Image
 from .services import DataGenerator
 
 

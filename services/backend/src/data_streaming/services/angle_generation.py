@@ -1,4 +1,4 @@
-from .cv2_detection import Camera, Thresher
+from cv2_detection.object_detection import Camera, Thresher
 
 from .data_generation import RandomNumberGenerator, DataGenerator
 from .angle_recognition import AngleRecognizer, FieldPendulumAngleRecognizer

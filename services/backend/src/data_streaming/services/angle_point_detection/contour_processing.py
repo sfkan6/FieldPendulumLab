@@ -1,4 +1,5 @@
-from ..cv2_detection.object_detection import MultipleProcessor, Processor, Contour
+from cv2_detection.object_detection import MultipleProcessor, Processor, Contour
+
 
 class Area(Processor):
 

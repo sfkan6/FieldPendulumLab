@@ -1,5 +1,4 @@
-from .cv2_detection import Camera, Thresher
-from .cv2_detection.object_detection import MultipleIndicator
+from cv2_detection.object_detection import Camera, Thresher, MultipleIndicator
 
 from .data_generation import DataGenerator
 from .angle_point_detection import CenterPointIndicator, CornerPointIndicator
